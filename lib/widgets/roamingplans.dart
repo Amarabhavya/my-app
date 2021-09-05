@@ -1,20 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:app/themes/colors.dart';
+import 'package:app/resources/strings.dart';
+import 'package:app/resources/images.dart';
 
 class roamingplans extends StatelessWidget {
   const roamingplans({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final Shader linearGradient = LinearGradient(
+      colors: <Color>[AppColors.special, AppColors.pink],
+    ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
+    final Shader planning = LinearGradient(
+      colors: <Color>[AppColors.white, AppColors.paleviolet],
+    ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          child: Text("Roaming Plans",
+          child: Text(strings.roaming,
             style: TextStyle(
               fontSize: 18,
               fontFamily: 'AvenirNext',
-              color:AppColors.black,
+              fontWeight: FontWeight.bold,
+              foreground: Paint()..shader=linearGradient,
             ),
           ),
           margin: EdgeInsets.fromLTRB(24, 36, 0, 0),
@@ -25,14 +34,14 @@ class roamingplans extends StatelessWidget {
           margin: EdgeInsets.fromLTRB(20, 12, 20, 0),
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("assets/group-37.png"),
+              image: AssetImage(images.group37),
             ),
           ),
           child: new Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                child: Text("GoSakto",style: TextStyle(
+                child: Text(strings.gosakto,style: TextStyle(
                   fontSize: 14,
                   fontFamily: 'AvenirNext',
                   color:AppColors.white,
@@ -40,31 +49,57 @@ class roamingplans extends StatelessWidget {
                 margin: EdgeInsets.fromLTRB(20, 20, 0, 0),
               ),
               Container(
-                child: Text("Planning for a foreign trip?",style: TextStyle(
+                child: Text(strings.plan,style: TextStyle(
                   fontSize: 18,
                   fontFamily: 'AvenirNext',
                   fontWeight: FontWeight.bold,
-                  color:AppColors.white,
+                  foreground: Paint()..shader=planning,
                 ),),
                 margin: EdgeInsets.fromLTRB(20, 8, 0, 0),
               ),
               Container(
-                child: Text("Roam worry free!",style: TextStyle(
+                child: Text(strings.roam,style: TextStyle(
                   fontSize: 12,
                   fontFamily: 'AvenirNext',
                   color:AppColors.white,
                 ),),
                 margin: EdgeInsets.fromLTRB(20, 5, 0, 0),
               ),
+
               Container(
-                child: Text("Explore Roaming Packs",style: TextStyle(
-                  fontSize: 14,
-                  fontFamily: 'AvenirNext',
-                  fontWeight: FontWeight.w600,
-                  color:AppColors.white,
-                ),),
-                margin: EdgeInsets.fromLTRB(20, 20, 0, 0),
+                height:54,
+                width: 320,
+                margin: EdgeInsets.fromLTRB(0, 15, 0, 0),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    gradient: LinearGradient(
+                        colors: [
+                          AppColors.black.withOpacity(0.4),
+                          AppColors.black.withOpacity(0.6),
+
+                        ]
+                    )
+                ),
+                child: new Row(
+                  children: [
+                    Container(
+                      child:Text(strings.explore,style: TextStyle(
+                        fontSize: 14,
+                        fontFamily: 'AvenirNext',
+                        fontWeight: FontWeight.w600,
+                        color:AppColors.white,
+                      ),),
+                      margin: EdgeInsets.fromLTRB(20, 8, 0, 0),
+                    ),
+                    Container(
+                      child: Icon(Icons.arrow_right_sharp,color: AppColors.white,),
+                      margin: EdgeInsets.fromLTRB(5, 8, 0, 0),
+                    )
+                  ],
+                ),
+
               ),
+
             ],
           ),
 

@@ -1,5 +1,7 @@
+import 'package:app/resources/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:app/themes/colors.dart';
+import 'package:app/resources/images.dart';
 
 class databalance extends StatelessWidget {
   const databalance({Key? key}) : super(key: key);
@@ -24,10 +26,13 @@ class databalance extends StatelessWidget {
                       child: new Row(
                         children: [
                           Container(
-                            height: 153,
-                            width: 136,
+                            height: 180,
+                            width: 160,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
+                              image: DecorationImage(
+                                image: AssetImage(images.group69),
+                              ),
                               gradient: LinearGradient(
                                 colors: [
                                   AppColors.warmblue,
@@ -40,21 +45,22 @@ class databalance extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  child: Image.asset("assets/group-65.png"),
+                                  child: Image.asset(images.group65),
                                   margin: EdgeInsets.fromLTRB(16, 16, 0, 22),
                                 ),
                                 Container(
-                                  child: Text("Load Balance",
+                                  child: Text(strings.load,
                                     style: TextStyle(
-                                      color: AppColors.white,
+                                      color: AppColors.white.withOpacity(0.8),
                                       fontSize: 12,
                                       fontFamily: 'AvenirNext',
                                     ),
                                   ),
+                                  margin: EdgeInsets.fromLTRB(16, 24, 0, 0),
                                 ),
                                 Container(
                                   child: Text(
-                                    "P 1675.00",
+                                    strings.value,
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 22,
@@ -63,14 +69,15 @@ class databalance extends StatelessWidget {
                                     ),
 
                                   ),
+                                  margin: EdgeInsets.fromLTRB(16, 5,0,0),
                                 ),
                                 Container(
-                                  padding:EdgeInsets.fromLTRB(16, 30, 0, 0),
-                                  child: Text("Valid till 26 Dec",
+                                  padding:EdgeInsets.fromLTRB(16, 25, 0, 0),
+                                  child: Text(strings.validity,
                                     style: TextStyle(
                                       fontSize:12,
                                       fontFamily: 'AvenirNext',
-                                      color: AppColors.white,
+                                      color: AppColors.white.withOpacity(0.8),
                                     ),
                                   ),
                                 ),
@@ -89,23 +96,24 @@ class databalance extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children:[
                                   Container(
-                                    child: Image.asset("assets/group-67.png"),
+                                    child: Image.asset(images.group67),
                                     height: 20,
                                     width: 21,
                                     margin: EdgeInsets.fromLTRB(16, 16,0, 22),
                                   ),
                                   Container(
-                                    child: Text("Data Balance",
+                                    child: Text(strings.databalance,
                                       style: TextStyle(
                                         fontSize: 12,
                                         fontFamily: 'AvenirNext',
-                                        color: AppColors.blackpearl,
+                                        color: AppColors.blackpearl.withOpacity(0.5),
 
                                       ),
                                     ),
+                                    margin: EdgeInsets.fromLTRB(16, 15, 0, 0),
                                   ),
                                   Container(
-                                    child: Text("300MB",
+                                    child: Text(strings.data,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
@@ -114,16 +122,19 @@ class databalance extends StatelessWidget {
 
                                       ),
                                     ),
+                                    margin: EdgeInsets.fromLTRB(16, 3, 0, 0),
                                   ),
                                   Container(
-                                    child:Text("of 12GB",
+                                    child:Text(strings.totaldata,
                                       style: TextStyle(
                                         fontSize: 12,
                                         fontFamily: 'AvenirNext',
                                         color:AppColors.blackpearl,
                                       ),
                                     ),
+                                    margin: EdgeInsets.fromLTRB(16, 10, 0, 0),
                                   ),
+
                                 ]
                             ),
                           ),
@@ -139,13 +150,13 @@ class databalance extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children:[
                                   Container(
-                                    child: Image.asset("assets/group-67.png"),
+                                    child: Image.asset(images.group67),
                                     height: 20,
                                     width: 21,
                                     margin: EdgeInsets.fromLTRB(16, 16,0, 22),
                                   ),
                                   Container(
-                                    child: Text("Data Balance",
+                                    child: Text(strings.databalance,
                                       style: TextStyle(
                                         fontSize: 12,
                                         fontFamily: 'AvenirNext',
@@ -153,9 +164,10 @@ class databalance extends StatelessWidget {
 
                                       ),
                                     ),
+                                    margin: EdgeInsets.fromLTRB(16, 15, 0, 0),
                                   ),
                                   Container(
-                                    child: Text("300MB",
+                                    child: Text(strings.data,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
@@ -164,15 +176,17 @@ class databalance extends StatelessWidget {
 
                                       ),
                                     ),
+                                    margin: EdgeInsets.fromLTRB(16, 3, 0, 0),
                                   ),
                                   Container(
-                                    child:Text("of 12GB",
+                                    child:Text(strings.totaldata,
                                       style: TextStyle(
                                         fontSize: 12,
                                         fontFamily: 'AvenirNext',
                                         color:AppColors.blackpearl,
                                       ),
                                     ),
+                                    margin: EdgeInsets.fromLTRB(16, 10, 0, 0),
                                   ),
                                 ]
                             ),
@@ -185,7 +199,7 @@ class databalance extends StatelessWidget {
                     child: new Row(
                       children: [
                         Container(
-                          child: Text("Recommended",
+                          child: Text(strings.recommended,
                             style: TextStyle(
                               fontSize: 12,
                               fontFamily: 'AvenirNext',
@@ -195,7 +209,7 @@ class databalance extends StatelessWidget {
                           padding: EdgeInsets.fromLTRB(20, 27, 0, 0),
                         ),
                         Container(
-                          child: Text("View all",
+                          child: Text(strings.viewall,
                             style: TextStyle(
                               fontSize: 12,
                               fontFamily: 'AvenirNext',
@@ -229,17 +243,44 @@ class databalance extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  child: Text("GoUNLI350",
+                                  height: 18,
+                                  width: 36,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    gradient: LinearGradient(
+                                      colors: [
+                                        AppColors.green,
+                                        AppColors.seagreen,
+                                      ]
+                                    ),
+                                  ),
+                                  child: new Column(
+                                    children: [
+                                      Container(
+                                        child: Text(strings.NEW,style: TextStyle(
+                                          fontSize: 8,
+                                          fontFamily: "AvenirNext",
+                                          color: AppColors.white,
+                                          fontWeight: FontWeight.bold,
+                                        ),),
+                                        margin: EdgeInsets.fromLTRB(8, 3, 0, 0),
+                                      )
+                                    ],
+                                  ),
+                                  margin: EdgeInsets.fromLTRB(122, 0, 0, 0),
+                                ),
+                                Container(
+                                  child: Text(strings.go350,
                                     style: TextStyle(
                                         color: AppColors.white,
                                         fontSize: 9,
                                         fontFamily: 'AvenirNext',
                                     ),
                                   ),
-                                  padding: EdgeInsets.fromLTRB(16, 16, 0, 0),
+                                  padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
                                 ),
                                 Container(
-                                  child: Text("30 days UNLI to Globe",
+                                  child: Text(strings.days,
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12,
@@ -247,7 +288,7 @@ class databalance extends StatelessWidget {
                                       color: AppColors.white,
                                     ),
                                   ),
-                                  padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+                                  padding: EdgeInsets.fromLTRB(16, 3, 0, 0),
                                 ),
                               ],
                             ),
@@ -264,7 +305,7 @@ class databalance extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  child: Text("GoUNLI180",
+                                  child: Text(strings.go180,
                                     style: TextStyle(
                                       fontSize: 9,
                                       fontFamily: 'AvenirNext',
@@ -274,7 +315,7 @@ class databalance extends StatelessWidget {
                                   padding: EdgeInsets.fromLTRB(16, 16, 0, 0),
                                 ),
                                 Container(
-                                  child: Text("15 days UNLI to Globe",
+                                  child: Text(strings.days15,
                                     style: TextStyle(
                                       fontSize: 12,
                                       fontFamily: 'AvenirNext',
@@ -282,7 +323,7 @@ class databalance extends StatelessWidget {
                                       color: AppColors.white,
                                     ),
                                   ),
-                                  padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+                                  padding: EdgeInsets.fromLTRB(16, 3, 0, 0),
                                 ),
                               ],
                             ),
@@ -299,7 +340,7 @@ class databalance extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  child: Text("GoUNLI180",
+                                  child: Text(strings.go180,
                                     style: TextStyle(
                                       fontSize: 9,
                                       fontFamily: 'AvenirNext',
@@ -309,7 +350,7 @@ class databalance extends StatelessWidget {
                                   padding: EdgeInsets.fromLTRB(16, 16, 0, 0),
                                 ),
                                 Container(
-                                  child: Text("15 days UNLI to Globe",
+                                  child: Text(strings.days15,
                                     style: TextStyle(
                                       fontSize: 12,
                                       fontFamily: 'AvenirNext',
@@ -317,7 +358,7 @@ class databalance extends StatelessWidget {
                                       color: AppColors.white,
                                     ),
                                   ),
-                                  padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+                                  padding: EdgeInsets.fromLTRB(16, 3, 0, 0),
                                 ),
                               ],
                             ),

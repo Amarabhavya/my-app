@@ -1,20 +1,26 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:app/themes/colors.dart';
+import 'package:app/resources/strings.dart';
+import 'package:app/resources/images.dart';
 
 class globerewards extends StatelessWidget {
   const globerewards({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final Shader linearGradient = LinearGradient(
+      colors: <Color>[AppColors.special, AppColors.pink],
+    ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          child: Text("Globe Rewards",style: TextStyle(
+          child: Text(strings.globerewards,style: TextStyle(
             fontSize: 18,
             fontFamily: 'AvenirNext',
-            color: AppColors.black,
+            fontWeight: FontWeight.bold,
+            foreground: Paint()..shader=linearGradient,
           ),),
           margin: EdgeInsets.fromLTRB(24, 36, 0, 0),
         ),
@@ -39,7 +45,7 @@ class globerewards extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      child: Text("YOUR REWARD POINTS",style: TextStyle(
+                      child: Text(strings.rewards,style: TextStyle(
                         fontSize: 11,
                         fontFamily: 'AvenirNext',
                         color: AppColors.white,
@@ -47,7 +53,7 @@ class globerewards extends StatelessWidget {
                       margin: EdgeInsets.fromLTRB(16, 20, 0, 0),
                     ),
                     Container(
-                      child: Text("7250 Pts",style: TextStyle(
+                      child: Text(strings.points,style: TextStyle(
                         fontSize: 20,
                         fontFamily: 'AvenirNext',
                         fontWeight: FontWeight.bold,
@@ -60,7 +66,7 @@ class globerewards extends StatelessWidget {
                 
               ),
               Container(
-                child: Image.asset("assets/group-41.png"),
+                child: Image.asset(images.group41),
                 margin: EdgeInsets.fromLTRB(120, 13, 0, 14),
               )
               

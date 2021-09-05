@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:app/themes/colors.dart';
+import 'package:app/resources/strings.dart';
+import 'package:app/resources/images.dart';
 
 class offers extends StatelessWidget {
   const offers({Key? key}) : super(key: key);
@@ -13,7 +15,7 @@ class offers extends StatelessWidget {
           child: new Row(
             children: [
               Container(
-                child: Text("Here is what you can get",style: TextStyle(
+                child: Text(strings.offers,style: TextStyle(
                   fontSize:15,
                   fontFamily: 'AvenirNext',
                   color: AppColors.violet,
@@ -34,7 +36,7 @@ class offers extends StatelessWidget {
                   width: 140,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("assets/group-51.png"),
+                        image: AssetImage(images.group51),
                       )
                   ),
                   margin: EdgeInsets.fromLTRB(20, 12, 0, 0),
@@ -42,13 +44,13 @@ class offers extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        child: Image.asset("assets/group-38.png"),
+                        child: Image.asset(images.group38),
                         margin: EdgeInsets.fromLTRB(16, 20, 0, 0),
                         height: 28,
                         width: 64,
                       ),
                       Container(
-                        child: Text("1000 Pts",style: TextStyle(
+                        child: Text(strings.pts,style: TextStyle(
                           fontSize:16,
                           fontFamily: 'AvenirNext',
                           fontWeight: FontWeight.bold,
@@ -59,7 +61,7 @@ class offers extends StatelessWidget {
                       Container(
                         height: 34,
                         width: 75,
-                        child: Text("P 500 OFF on SHOES",style: TextStyle(
+                        child: Text(strings.off,style: TextStyle(
                           fontSize:16,
                           fontFamily: 'AvenirNext',
                           color: AppColors.white,
@@ -74,7 +76,7 @@ class offers extends StatelessWidget {
                   width: 140,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/group-53.png"),
+                      image: AssetImage(images.group53),
                     ),
                   ),
                   margin: EdgeInsets.fromLTRB(10, 12, 0, 0),
@@ -84,12 +86,12 @@ class offers extends StatelessWidget {
                       Container(
                         height: 28,
                         width: 68,
-                        child: Image.asset("assets/group-33.png"),
+                        child: Image.asset(images.group33),
                         margin: EdgeInsets.fromLTRB(16, 20, 0, 0),
 
                       ),
                       Container(
-                        child: Text("1000 Pts",style:TextStyle(
+                        child: Text(strings.pts,style:TextStyle(
                           fontWeight: FontWeight.bold,
                           fontFamily: 'AvenirNext',
                           fontSize: 16,
@@ -100,7 +102,7 @@ class offers extends StatelessWidget {
                       Container(
                         //height: 34,
                         //width: 85,
-                        child: Text("Get Hair Spa",style: TextStyle(
+                        child: Text(strings.hairspa,style: TextStyle(
                           fontSize:14,
                           fontFamily: 'AvenirNext',
                           color: AppColors.white,
@@ -112,11 +114,11 @@ class offers extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: 168,
+                  height: 180,
                   width: 140,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/group-45.png"),
+                      image: AssetImage(images.group53),
                     ),
                   ),
                   margin: EdgeInsets.fromLTRB(10, 12, 0, 0),
@@ -124,57 +126,63 @@ class offers extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        child: Image.asset("assets/bitmap-6.png"),
-                        margin: EdgeInsets.fromLTRB(16, 24, 0, 0),
+                        height: 28,
+                        width: 68,
+                        child: Image.asset(images.group33),
+                        margin: EdgeInsets.fromLTRB(16, 20, 0, 0),
 
                       ),
                       Container(
-                        child: Text("Facebook Surf",style:TextStyle(
+                        child: Text(strings.pts,style:TextStyle(
                           fontWeight: FontWeight.bold,
                           fontFamily: 'AvenirNext',
-                          fontSize: 14,
+                          fontSize: 16,
                           color: AppColors.white,
                         ),),
-                        margin: EdgeInsets.fromLTRB(16, 15, 0, 0),
+                        margin: EdgeInsets.fromLTRB(16, 29, 0, 0),
                       ),
                       Container(
-                        height:68 ,
-                        width: 140,
-                        margin: EdgeInsets.fromLTRB(0,24 ,0, 0),
-                        child: new Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              child: Text("Get pack for",style:TextStyle(
-                                fontSize:14,
-                                fontFamily: 'AvenirNext',
-                                color: AppColors.white,
-                              ),),
-                              margin: EdgeInsets.fromLTRB(16, 15, 0, 0),
-                            ),
-                            Container(
-                              child: Text("P 50.00/m",style:TextStyle(
-                                fontSize: 14,
-                                fontFamily: 'AvenirNext',
-                                fontWeight: FontWeight.bold,
-                                color: AppColors.white,
-                              ),),
-                              margin: EdgeInsets.fromLTRB(16, 0, 0, 13),
-                            ),
-                          ],
-                        ),
+                        //height: 34,
+                        //width: 85,
+                        child: Text(strings.hairspa,style: TextStyle(
+                          fontSize:14,
+                          fontFamily: 'AvenirNext',
+                          color: AppColors.white,
+                        ),),
+                        margin: EdgeInsets.fromLTRB(16, 27, 55, 0),
                       ),
 
                     ],
                   ),
-
                 ),
-
               ],
             ),
           ),
+
         ),
+        Container(
+          margin: EdgeInsets.all(20),
+          height: 52,
+          width: 320,
+          child: FlatButton(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+              side: BorderSide(color: AppColors.black),
+
+            ),
+            child: Text(strings.findout,style: TextStyle(
+              fontSize:14,
+              fontFamily: "AvenirNext",
+              fontWeight: FontWeight.bold,
+              color: AppColors.black,
+            ),),
+
+            onPressed: () {},
+          ),
+        )
       ],
     );
   }
 }
+
+

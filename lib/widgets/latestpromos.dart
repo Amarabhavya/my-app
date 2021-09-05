@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:app/themes/colors.dart';
+import 'package:app/resources/strings.dart';
+import 'package:app/resources/images.dart';
 
 class latestpromo extends StatelessWidget {
   const latestpromo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final Shader linearGradient = LinearGradient(
+      colors: <Color>[AppColors.special, AppColors.pink],
+    ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -13,15 +18,16 @@ class latestpromo extends StatelessWidget {
           child: new Row(
             children: [
               Container(
-                child: Text("Latest Promos",style: TextStyle(
+                child: Text(strings.latest,style: TextStyle(
                   fontSize:18,
                   fontFamily: 'AvenirNext',
-                  color: AppColors.black,
+                  fontWeight: FontWeight.bold,
+                  foreground: Paint()..shader=linearGradient,
                 ),),
                 margin: EdgeInsets.fromLTRB(24, 40, 0, 0),
               ),
               Container(
-                child: Text("View all",style: TextStyle(
+                child: Text(strings.viewall,style: TextStyle(
                   fontSize:18,
                   fontFamily: 'AvenirNext',
                   color: AppColors.blue,
@@ -41,7 +47,7 @@ class latestpromo extends StatelessWidget {
                   width: 140,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("assets/group-43.png"),
+                        image: AssetImage(images.group43),
                       )
                   ),
                   margin: EdgeInsets.fromLTRB(20, 12, 0, 0),
@@ -49,13 +55,13 @@ class latestpromo extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        child: Image.asset("assets/bitmap-4.png"),
+                        child: Image.asset(images.bitmap4),
                         margin: EdgeInsets.fromLTRB(16, 24, 0, 0),
                         height: 18,
                         width: 18,
                       ),
                       Container(
-                        child: Text("Spotify Premium",style: TextStyle(
+                        child: Text(strings.spotify,style: TextStyle(
                           fontSize:14,
                           fontFamily: 'AvenirNext',
                           color: AppColors.white,
@@ -65,26 +71,35 @@ class latestpromo extends StatelessWidget {
                       Container(
                         height:68 ,
                         width: 140,
-                        margin: EdgeInsets.fromLTRB(0,24 ,0, 0),
+                        margin: EdgeInsets.fromLTRB(0,26 ,0, 0),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          gradient: LinearGradient(
+                            colors: [
+                              AppColors.black.withOpacity(0.5),
+                              AppColors.black.withOpacity(0.6),
+                            ]
+                          )
+                        ),
                         child: new Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              child: Text("Subscribe for",style:TextStyle(
+                              child: Text(strings.subscribe,style:TextStyle(
                                 fontSize:14,
                                 fontFamily: 'AvenirNext',
-                                color: AppColors.white,
+                                color: AppColors.white.withOpacity(0.6),
                               ),),
                               margin: EdgeInsets.fromLTRB(16, 15, 0, 0),
                             ),
                             Container(
-                              child: Text("P 129.00/m",style:TextStyle(
+                              child: Text(strings.cost,style:TextStyle(
                                 fontSize: 14,
                                 fontFamily: 'AvenirNext',
                                 fontWeight: FontWeight.bold,
                                 color: AppColors.white,
                               ),),
-                              margin: EdgeInsets.fromLTRB(16, 0, 0, 13),
+                              margin: EdgeInsets.fromLTRB(16, 5, 0, 13),
                             ),
                           ],
                         ),
@@ -98,7 +113,7 @@ class latestpromo extends StatelessWidget {
                   width: 140,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/group-45.png"),
+                      image: AssetImage(images.group45),
                     ),
                   ),
                   margin: EdgeInsets.fromLTRB(10, 12, 0, 0),
@@ -106,12 +121,12 @@ class latestpromo extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                            child: Image.asset("assets/bitmap-6.png"),
+                            child: Image.asset(images.bitmap6),
                             margin: EdgeInsets.fromLTRB(16, 24, 0, 0),
 
                       ),
                       Container(
-                        child: Text("Facebook Surf",style:TextStyle(
+                        child: Text(strings.facebook,style:TextStyle(
                           fontWeight: FontWeight.bold,
                           fontFamily: 'AvenirNext',
                           fontSize: 14,
@@ -122,26 +137,35 @@ class latestpromo extends StatelessWidget {
                       Container(
                         height:68 ,
                         width: 140,
-                        margin: EdgeInsets.fromLTRB(0,24 ,0, 0),
+                        margin: EdgeInsets.fromLTRB(0,25 ,0, 0),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            gradient: LinearGradient(
+                                colors: [
+                                  AppColors.black.withOpacity(0.5),
+                                  AppColors.black.withOpacity(0.6),
+                                ]
+                            ),
+                        ),
                         child: new Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              child: Text("Get pack for",style:TextStyle(
+                              child: Text(strings.pack,style:TextStyle(
                                 fontSize:14,
                                 fontFamily: 'AvenirNext',
-                                color: AppColors.white,
+                                color: AppColors.white.withOpacity(0.6),
                               ),),
                               margin: EdgeInsets.fromLTRB(16, 15, 0, 0),
                             ),
                             Container(
-                              child: Text("P 50.00/m",style:TextStyle(
+                              child: Text(strings.fcost,style:TextStyle(
                                 fontSize: 14,
                                 fontFamily: 'AvenirNext',
                                 fontWeight: FontWeight.bold,
                                 color: AppColors.white,
                               ),),
-                              margin: EdgeInsets.fromLTRB(16, 0, 0, 13),
+                              margin: EdgeInsets.fromLTRB(16, 5, 0, 13),
                             ),
                           ],
                         ),
@@ -155,7 +179,7 @@ class latestpromo extends StatelessWidget {
                   width: 140,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/group-45.png"),
+                      image: AssetImage(images.group45),
                     ),
                   ),
                   margin: EdgeInsets.fromLTRB(10, 12, 0, 0),
@@ -163,12 +187,12 @@ class latestpromo extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        child: Image.asset("assets/bitmap-6.png"),
+                        child: Image.asset(images.bitmap6),
                         margin: EdgeInsets.fromLTRB(16, 24, 0, 0),
 
                       ),
                       Container(
-                        child: Text("Facebook Surf",style:TextStyle(
+                        child: Text(strings.facebook,style:TextStyle(
                           fontWeight: FontWeight.bold,
                           fontFamily: 'AvenirNext',
                           fontSize: 14,
@@ -179,26 +203,35 @@ class latestpromo extends StatelessWidget {
                       Container(
                         height:68 ,
                         width: 140,
-                        margin: EdgeInsets.fromLTRB(0,24 ,0, 0),
+                        margin: EdgeInsets.fromLTRB(0,25 ,0, 0),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            gradient: LinearGradient(
+                                colors: [
+                                  AppColors.black.withOpacity(0.5),
+                                  AppColors.black.withOpacity(0.6),
+                                ]
+                            ),
+                        ),
                         child: new Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              child: Text("Get pack for",style:TextStyle(
+                              child: Text(strings.pack,style:TextStyle(
                                 fontSize:14,
                                 fontFamily: 'AvenirNext',
-                                color: AppColors.white,
+                                color: AppColors.white.withOpacity(0.6),
                               ),),
                               margin: EdgeInsets.fromLTRB(16, 15, 0, 0),
                             ),
                             Container(
-                              child: Text("P 50.00/m",style:TextStyle(
+                              child: Text(strings.fcost,style:TextStyle(
                                 fontSize: 14,
                                 fontFamily: 'AvenirNext',
                                 fontWeight: FontWeight.bold,
                                 color: AppColors.white,
                               ),),
-                              margin: EdgeInsets.fromLTRB(16, 0, 0, 13),
+                              margin: EdgeInsets.fromLTRB(16, 5, 0, 13),
                             ),
                           ],
                         ),
