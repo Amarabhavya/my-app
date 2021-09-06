@@ -70,7 +70,7 @@ flutter:
   fonts:
     - family: AvenirNext
       fonts:
-        - asset: fonts/AvenirNext/AvenirNextLTPro-Regular.otf
+        - asset: assets/fonts/AvenirNext/AvenirNextLTPro-Regular.otf
 
 
 

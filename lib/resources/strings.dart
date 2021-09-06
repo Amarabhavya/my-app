@@ -46,5 +46,9 @@ class strings {
   static String haq ="Subscribe for";
   static String haqcost = "P 129.00/m";
   static String NEW = "NEW";
+  static String mobile = "Mobile";
+  static String lifestyle ="Lifestyle";
+  static String wallet ="Wallet";
+  static String more = "More";
 
 }

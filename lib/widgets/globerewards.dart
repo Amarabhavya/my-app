@@ -26,7 +26,7 @@ class globerewards extends StatelessWidget {
         ),
         Container(
           height: 84,
-          width: 320,
+          width: double.infinity,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               gradient: LinearGradient(
@@ -37,7 +37,7 @@ class globerewards extends StatelessWidget {
                   ]
               )
           ),
-          margin: EdgeInsets.fromLTRB(20, 12, 0, 0),
+          margin: EdgeInsets.fromLTRB(20, 12, 20, 0),
           child: new Row(
             children: [
               Container(
@@ -66,8 +66,8 @@ class globerewards extends StatelessWidget {
                 
               ),
               Container(
-                child: Image.asset(images.group41),
-                margin: EdgeInsets.fromLTRB(120, 13, 0, 14),
+                child: Image.asset(images.globerewards),
+                margin: EdgeInsets.fromLTRB(150, 13, 0, 14),
               )
               
             ],

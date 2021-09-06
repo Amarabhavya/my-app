@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 
 Widget BrandName(){
   return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: [
       Container(
         child: Image.asset(images.menuicon,
         height: 20.0,width: 20.0,),
-        margin: EdgeInsets.fromLTRB(20, 0, 0, 0),
+        //margin: EdgeInsets.fromLTRB(20, 0, 0, 0),
       ),
       Container(
         child: Image.asset(images.bell,height: 22,width: 22,),

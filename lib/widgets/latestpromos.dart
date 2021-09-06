@@ -16,6 +16,7 @@ class latestpromo extends StatelessWidget {
       children: [
         Container(
           child: new Row(
+            //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 child: Text(strings.latest,style: TextStyle(
@@ -32,7 +33,7 @@ class latestpromo extends StatelessWidget {
                   fontFamily: 'AvenirNext',
                   color: AppColors.blue,
                 ),),
-                margin: EdgeInsets.fromLTRB(139, 40, 0, 0),
+                margin: EdgeInsets.fromLTRB(160, 40, 0, 0),
               ),
             ],
           ),
@@ -47,7 +48,7 @@ class latestpromo extends StatelessWidget {
                   width: 140,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage(images.group43),
+                        image: AssetImage(images.spotifypremium),
                       )
                   ),
                   margin: EdgeInsets.fromLTRB(20, 12, 0, 0),
@@ -55,7 +56,7 @@ class latestpromo extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        child: Image.asset(images.bitmap4),
+                        child: Image.asset(images.spotify),
                         margin: EdgeInsets.fromLTRB(16, 24, 0, 0),
                         height: 18,
                         width: 18,
@@ -113,7 +114,7 @@ class latestpromo extends StatelessWidget {
                   width: 140,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage(images.group45),
+                      image: AssetImage(images.facebook),
                     ),
                   ),
                   margin: EdgeInsets.fromLTRB(10, 12, 0, 0),
@@ -121,7 +122,7 @@ class latestpromo extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                            child: Image.asset(images.bitmap6),
+                            child: Image.asset(images.fbicon),
                             margin: EdgeInsets.fromLTRB(16, 24, 0, 0),
 
                       ),
@@ -179,7 +180,7 @@ class latestpromo extends StatelessWidget {
                   width: 140,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage(images.group45),
+                      image: AssetImage(images.facebook),
                     ),
                   ),
                   margin: EdgeInsets.fromLTRB(10, 12, 0, 0),
@@ -187,7 +188,7 @@ class latestpromo extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        child: Image.asset(images.bitmap6),
+                        child: Image.asset(images.fbicon),
                         margin: EdgeInsets.fromLTRB(16, 24, 0, 0),
 
                       ),

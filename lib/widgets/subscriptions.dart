@@ -13,7 +13,7 @@ class subscriptions extends StatelessWidget {
     ).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
     return Container(
           height:891 ,
-          width: 412,
+          width: double.infinity,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             color:AppColors.black,
@@ -42,6 +42,7 @@ class subscriptions extends StatelessWidget {
             ),
             Container(
               child: new Row(
+                //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
                     child: Text(strings.popular,style: TextStyle(
@@ -55,7 +56,7 @@ class subscriptions extends StatelessWidget {
                   Container(
                     width: 54,
                     height: 21,
-                    child: Image.asset(images.bm10),
+                    child: Image.asset(images.netflix),
                     margin: EdgeInsets.fromLTRB(5, 25, 0, 0),
                   ),
                   Container(
@@ -65,7 +66,8 @@ class subscriptions extends StatelessWidget {
                       color: AppColors.blue,
 
                     ),),
-                    margin:EdgeInsets.fromLTRB(132, 25, 0, 0),
+                    margin:EdgeInsets.fromLTRB(175, 25, 0, 0),
+
                   ),
 
                 ],
@@ -81,7 +83,7 @@ class subscriptions extends StatelessWidget {
                         width: 140,
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage(images.bm23),
+                              image: AssetImage(images.strangerthings),
                             )
                         ),
                         margin: EdgeInsets.fromLTRB(20, 13, 0, 0),
@@ -91,7 +93,7 @@ class subscriptions extends StatelessWidget {
                         width: 140,
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage(images.bm25),
+                              image: AssetImage(images.reasons),
                             )
                         ),
                         margin: EdgeInsets.fromLTRB(10, 13, 0, 0),
@@ -101,7 +103,7 @@ class subscriptions extends StatelessWidget {
                         width: 140,
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage(images.bm23),
+                              image: AssetImage(images.strangerthings),
                             )
                         ),
                         margin: EdgeInsets.fromLTRB(10, 13, 0, 0),
@@ -125,7 +127,7 @@ class subscriptions extends StatelessWidget {
                     Container(
                       width: 71,
                       height: 22,
-                      child: Image.asset(images.bm13),
+                      child: Image.asset(images.prime),
                       margin: EdgeInsets.fromLTRB(5, 42, 0, 0),
                     ),
                     Container(
@@ -135,7 +137,7 @@ class subscriptions extends StatelessWidget {
                         color: AppColors.blue,
 
                       ),),
-                      margin:EdgeInsets.fromLTRB(132, 25, 0, 0),
+                      margin:EdgeInsets.fromLTRB(175, 25, 0, 0),
                     ),
 
                   ],
@@ -151,7 +153,7 @@ class subscriptions extends StatelessWidget {
                         width: 140,
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage(images.bm23),
+                              image: AssetImage(images.strangerthings),
                             )
                         ),
                         margin: EdgeInsets.fromLTRB(20, 13, 0, 0),
@@ -161,7 +163,7 @@ class subscriptions extends StatelessWidget {
                         width: 140,
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage(images.bm25),
+                              image: AssetImage(images.reasons),
                             )
                         ),
                         margin: EdgeInsets.fromLTRB(10, 13, 0, 0),
@@ -171,7 +173,7 @@ class subscriptions extends StatelessWidget {
                         width: 140,
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage(images.bm23),
+                              image: AssetImage(images.strangerthings),
                             )
                         ),
                         margin: EdgeInsets.fromLTRB(10, 13, 0, 0),
@@ -205,7 +207,7 @@ class subscriptions extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              child: Image.asset(images.bm15),
+                              child: Image.asset(images.haq),
                               margin: EdgeInsets.fromLTRB(22, 31, 0, 0),
                             ),
                             Container(
@@ -266,7 +268,7 @@ class subscriptions extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              child: Image.asset(images.bm17),
+                              child: Image.asset(images.iflix),
                               height:35,
                               width:76,
                               margin: EdgeInsets.fromLTRB(32, 35, 0, 0),
@@ -329,7 +331,7 @@ class subscriptions extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              child: Image.asset(images.bm17),
+                              child: Image.asset(images.iflix),
                               height: 35,
                               width: 76,
                               margin: EdgeInsets.fromLTRB(32, 35, 0, 0),

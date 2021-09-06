@@ -36,7 +36,7 @@ class offers extends StatelessWidget {
                   width: 140,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage(images.group51),
+                        image: AssetImage(images.shoes),
                       )
                   ),
                   margin: EdgeInsets.fromLTRB(20, 12, 0, 0),
@@ -44,7 +44,7 @@ class offers extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        child: Image.asset(images.group38),
+                        child: Image.asset(images.aldo),
                         margin: EdgeInsets.fromLTRB(16, 20, 0, 0),
                         height: 28,
                         width: 64,
@@ -76,7 +76,7 @@ class offers extends StatelessWidget {
                   width: 140,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage(images.group53),
+                      image: AssetImage(images.spa),
                     ),
                   ),
                   margin: EdgeInsets.fromLTRB(10, 12, 0, 0),
@@ -86,7 +86,7 @@ class offers extends StatelessWidget {
                       Container(
                         height: 28,
                         width: 68,
-                        child: Image.asset(images.group33),
+                        child: Image.asset(images.raffels),
                         margin: EdgeInsets.fromLTRB(16, 20, 0, 0),
 
                       ),
@@ -118,7 +118,7 @@ class offers extends StatelessWidget {
                   width: 140,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage(images.group53),
+                      image: AssetImage(images.spa),
                     ),
                   ),
                   margin: EdgeInsets.fromLTRB(10, 12, 0, 0),
@@ -128,7 +128,7 @@ class offers extends StatelessWidget {
                       Container(
                         height: 28,
                         width: 68,
-                        child: Image.asset(images.group33),
+                        child: Image.asset(images.raffels),
                         margin: EdgeInsets.fromLTRB(16, 20, 0, 0),
 
                       ),
@@ -163,7 +163,7 @@ class offers extends StatelessWidget {
         Container(
           margin: EdgeInsets.all(20),
           height: 52,
-          width: 320,
+          width: double.infinity,
           child: FlatButton(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
