@@ -218,7 +218,7 @@ class databalance extends StatelessWidget {
                                 color: AppColors.blue,
                               ),
                             ),
-                            padding: EdgeInsets.fromLTRB(200, 27, 0, 0),
+                            padding: EdgeInsets.fromLTRB(250, 27, 0, 0),
                           ),
                         ],
                       ),

@@ -96,7 +96,7 @@ class roamingplans extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(20, 8, 0, 0),
                       ),
                       Container(
-                        child: Icon(Icons.arrow_right_sharp,color: AppColors.white,),
+                        child: Icon(Icons.navigate_next_rounded,color: AppColors.white,),
                         margin: EdgeInsets.fromLTRB(5, 8, 0, 0),
                       )
                     ],

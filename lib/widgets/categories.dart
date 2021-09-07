@@ -43,7 +43,7 @@ class categories extends StatelessWidget {
               ),
               Container(
                 margin: EdgeInsets.fromLTRB(20, 6, 6, 19),
-                child: Icon(Icons.arrow_drop_down,color: AppColors.black,),
+                child: Icon(Icons.expand_more_sharp,color: AppColors.black,),
 
               ),
               Container(

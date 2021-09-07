@@ -5,6 +5,7 @@ import 'package:flutter/rendering.dart';
 import 'package:app/themes/colors.dart';
 import 'package:app/resources/images.dart';
 import 'package:app/resources/strings.dart';
+import 'package:app/widgets/sidedrawer.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -29,6 +30,7 @@ class _HomeState extends State<Home> {
         title: BrandName(),
         elevation: 0.0,
       ),
+      drawer: sidedrawer(),
       body: PageView(
         controller: pageController,
         children: [
@@ -52,7 +54,8 @@ class _HomeState extends State<Home> {
               ),)
           ),
           BottomNavigationBarItem(
-            icon:Image.asset(images.mobile,width: 22,height: 22,),
+            //icon:Image.asset(images.mobile,width: 22,height: 22,),
+            icon: Icon(Icons.home_filled),
             title: new Text(strings.lifestyle,style: TextStyle(
               fontSize: 11,
               fontFamily: "AvenirNext",
@@ -60,7 +63,8 @@ class _HomeState extends State<Home> {
             ),),
           ),
           BottomNavigationBarItem(
-            icon:Image.asset(images.mobile,width: 22,height: 22,),
+            //icon:Image.asset(images.mobile,width: 22,height: 22,),
+            icon: Icon(Icons.wallet_travel),
             title: new Text(strings.wallet,style: TextStyle(
               fontFamily: "AvenirNext",
               fontSize: 11,
@@ -68,7 +72,8 @@ class _HomeState extends State<Home> {
             ),),
           ),
           BottomNavigationBarItem(
-            icon:Image.asset(images.mobile,width: 22,height: 22,),
+            //icon:Image.asset(images.mobile,width: 22,height: 22,),
+            icon: Icon(Icons.more_horiz_sharp),
             title: new Text(strings.more,style: TextStyle(
               fontSize: 11,
               fontFamily: "AvenirNext",
@@ -78,8 +83,10 @@ class _HomeState extends State<Home> {
 
 
         ],
+        selectedItemColor: AppColors.blue,
         currentIndex: _selectedIndex,
         onTap: onTapped
+
       ),
 
     );

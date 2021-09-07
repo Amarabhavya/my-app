@@ -33,7 +33,7 @@ class latestpromo extends StatelessWidget {
                   fontFamily: 'AvenirNext',
                   color: AppColors.blue,
                 ),),
-                margin: EdgeInsets.fromLTRB(160, 40, 0, 0),
+                margin: EdgeInsets.fromLTRB(190, 40, 0, 0),
               ),
             ],
           ),

@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 class strings {
   static final String prepaid ="My Prepaid";
+  static final String number = "092787368820";
+  static final String aboutglobe = "About Globe";
+  static final String payment = "Payment";
   static final String load ="Load Balance";
   static final String value ="P 1675.00";
   static final String validity =" Valid till 26 Dec";
