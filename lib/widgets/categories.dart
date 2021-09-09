@@ -1,5 +1,5 @@
+import 'package:app/containers/databalance_container.dart';
 import 'package:app/resources/strings.dart';
-import 'package:app/widgets/databalance.dart';
 import 'package:app/widgets/globerewards.dart';
 import 'package:app/widgets/latestpromos.dart';
 import 'package:app/widgets/offers.dart';
@@ -9,6 +9,7 @@ import 'package:app/widgets/subscriptions.dart';
 import 'package:flutter/material.dart';
 import 'package:app/themes/colors.dart';
 
+// ignore: camel_case_types
 class categories extends StatelessWidget {
   const categories({Key? key}) : super(key: key);
 
@@ -20,7 +21,8 @@ class categories extends StatelessWidget {
         children: [
           Container(
             padding: EdgeInsets.fromLTRB(20, 32, 0, 0),
-            child:Text(strings.prepaid,
+            child: Text(
+              strings.prepaid,
               style: TextStyle(
                 color: AppColors.hex,
                 fontSize: 12,
@@ -32,7 +34,8 @@ class categories extends StatelessWidget {
             children: [
               Container(
                 margin: EdgeInsets.fromLTRB(20, 6, 6, 19),
-                child:Text("092787368820",
+                child: Text(
+                  "092787368820",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
@@ -43,27 +46,29 @@ class categories extends StatelessWidget {
               ),
               Container(
                 margin: EdgeInsets.fromLTRB(20, 6, 6, 19),
-                child: Icon(Icons.expand_more_sharp,color: AppColors.black,),
-
+                child: Icon(
+                  Icons.expand_more_sharp,
+                  color: AppColors.black,
+                ),
               ),
               Container(
                 margin: EdgeInsets.fromLTRB(151, 6, 20, 19),
-                child:Icon(Icons.add_outlined,color: AppColors.black,),
-
+                child: Icon(
+                  Icons.add_outlined,
+                  color: AppColors.black,
+                ),
               ),
             ],
           ),
-          databalance(),
+          //Databalance(),
+          DatabalanceContainer(),
           specialpromos(),
           latestpromo(),
           roamingplans(),
           globerewards(),
           offers(),
           subscriptions(),
-
         ],
-
-
       ),
     );
   }
