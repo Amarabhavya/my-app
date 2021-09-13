@@ -1,8 +1,10 @@
 import 'package:app/containers/databalance_container.dart';
+import 'package:app/containers/globecard_container.dart';
 import 'package:app/resources/strings.dart';
 import 'package:app/widgets/globerewards.dart';
 import 'package:app/widgets/latestpromos.dart';
 import 'package:app/widgets/offers.dart';
+import 'package:app/widgets/recommended.dart';
 import 'package:app/widgets/roamingplans.dart';
 import 'package:app/widgets/specialpromos.dart';
 import 'package:app/widgets/subscriptions.dart';
@@ -62,6 +64,8 @@ class categories extends StatelessWidget {
           ),
           //Databalance(),
           DatabalanceContainer(),
+          recommended(),
+          GlobeCardContainer(),
           specialpromos(),
           latestpromo(),
           roamingplans(),

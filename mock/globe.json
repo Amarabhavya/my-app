@@ -1,0 +1,19 @@
+{
+    "globecard": [
+        {
+          "id": 0,
+          "globetype" :"GoUNLI350",
+          "validity" : "30 days UNLI to Globe"
+        },
+        {
+            "id": 1,
+            "globetype" :"GoUNLI180",
+            "validity" : "15 days UNLI to Globe"
+        },
+        {
+            "id": 2,
+            "globetype" :"GoUNLI180",
+            "validity" : "15 days UNLI to Globe"
+        }
+    ]
+}

@@ -1,27 +1,26 @@
-//import 'package:app/core/models/databalance_model.dart';
-import 'package:app/widgets/Balancecard.dart';
+import 'package:app/core/services/globecard_sevices.dart';
+import 'package:app/widgets/globecard.dart';
 import 'package:flutter/material.dart';
-import 'package:app/core/services/databalance_services.dart';
 
-class DatabalanceContainer extends StatefulWidget {
-  const DatabalanceContainer({Key? key}) : super(key: key);
+class GlobeCardContainer extends StatefulWidget {
+  const GlobeCardContainer({Key? key}) : super(key: key);
 
   @override
-  _DatabalanceContainerState createState() => _DatabalanceContainerState();
+  _GlobeCardContainerState createState() => _GlobeCardContainerState();
 }
 
-class _DatabalanceContainerState extends State<DatabalanceContainer> {
-  late Future databalanceValue;
+class _GlobeCardContainerState extends State<GlobeCardContainer> {
+  late Future globecardvalue;
   @override
   void initState() {
     super.initState();
-    DatabalanceService dataBalance = DatabalanceService();
-    databalanceValue = dataBalance.getDataBalanceDetails(context);
+    GlobecardService globecard = GlobecardService();
+    globecardvalue = globecard.getGlobecardDetails(context);
   }
 
   Widget build(BuildContext context) {
     return FutureBuilder(
-        future: databalanceValue,
+        future: globecardvalue,
         builder: (context, snapshot) {
           dynamic data = snapshot.data;
           if (!snapshot.hasData) {
@@ -34,7 +33,7 @@ class _DatabalanceContainerState extends State<DatabalanceContainer> {
             if (data == null) {
               return Text("no data");
             } else {
-              return Balancecard(balance: data.databalancecard);
+              return GlobeCard(data: data.globecard);
             }
           }
           return Center(
