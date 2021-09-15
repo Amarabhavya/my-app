@@ -1,3 +1,4 @@
+import 'package:app/core/models/balance_model.dart';
 import 'package:app/core/models/databalance_model.dart';
 import 'package:app/themes/colors.dart';
 import 'package:flutter/material.dart';
@@ -5,7 +6,7 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class Balancecard extends StatefulWidget {
   //const Balancecard({ Key? key }) : super(key: key);
-  List<Databalancecard> balance;
+  List<Datacard> balance;
   Balancecard({required this.balance});
 
   @override
@@ -13,9 +14,9 @@ class Balancecard extends StatefulWidget {
 }
 
 class _BalancecardState extends State<Balancecard> {
+  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
-    int currentIndex = 0;
     return Container(
       height: 212,
       color: AppColors.lightblue,

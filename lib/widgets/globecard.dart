@@ -46,7 +46,6 @@ class _GlobeCardState extends State<GlobeCard> {
                         child: new Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(height: 16),
                             Text(
                               widget.data[index].globetype,
                               style: TextStyle(

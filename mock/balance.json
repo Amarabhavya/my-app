@@ -1,0 +1,29 @@
+{
+    "databalancecard": [
+      {
+        "id": 0,
+        "indicatorValue":0.5,
+        "image": "assets/load.png",
+        "balancetype": "Load Balance",
+        "price": "P 1675.00",
+        "validity": "Valid till 26 Dec"
+      },
+      {
+        "id": 1,
+        "indicatorValue":1.0,
+        "image": "assets/play.png",
+        "balancetype": "Data Balance",
+        "price": "300MB",
+        "validity": "of 12GB"
+      },
+      {
+        "id": 2,
+        "indicatorValue":1.5,
+        "image": "assets/load.png",
+        "balancetype": "Data Balance",
+        "price": "300MB",
+        "validity": "of 12GB"
+      }
+    ]
+  
+  }
