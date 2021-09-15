@@ -1,12 +1,11 @@
 import 'package:app/core/models/balance_model.dart';
-import 'package:app/core/models/databalance_model.dart';
 import 'package:app/themes/colors.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class Balancecard extends StatefulWidget {
   //const Balancecard({ Key? key }) : super(key: key);
-  List<Datacard> balance;
+  List<Databalancecard> balance;
   Balancecard({required this.balance});
 
   @override

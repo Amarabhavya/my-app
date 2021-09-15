@@ -1,11 +1,7 @@
-//import 'package:app/core/models/databalance_model.dart';
-import 'package:app/core/models/balance_model.dart';
-import 'package:app/core/models/databalance_model.dart';
 import 'package:app/core/services/api.dart';
 import 'package:app/providers/balance_provider.dart';
 import 'package:app/widgets/Balancecard.dart';
 import 'package:flutter/material.dart';
-import 'package:app/core/services/databalance_services.dart';
 import 'package:provider/provider.dart';
 
 class DatabalanceContainer extends StatefulWidget {
@@ -28,7 +24,7 @@ class _DatabalanceContainerState extends State<DatabalanceContainer> {
     Future.microtask(
       () => dataBalance.getDataBalanceDetails(),
     ).then((value) {
-      return balanceprovider.setCardModel = value as List<Datacard>;
+      return balanceprovider.setCardModel = value;
     }).catchError((error) {
       //balanceprovider.updateActionPlanError = error;
       print(error);
@@ -43,7 +39,8 @@ class _DatabalanceContainerState extends State<DatabalanceContainer> {
           child: CircularProgressIndicator(),
         );
       } else {
-        return Balancecard(balance: provider.card);
+        print(provider.card.databalancecard);
+        return Balancecard(balance: provider.card.databalancecard);
       }
     });
   }
