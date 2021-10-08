@@ -1,13 +1,20 @@
 import 'package:app/providers/balance_provider.dart';
 import 'package:app/screens/home.dart';
 import 'package:app/themes/colors.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-void main() {
-  runApp(
-    MyApp(),
-  );
+// void main() {
+//   runApp(
+//     MyApp(),
+//   );
+// }
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

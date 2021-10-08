@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "957972077114",
+    "project_id": "recharge-33735",
+    "storage_bucket": "recharge-33735.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957972077114:android:db0f7bc99054a391253303",
+        "android_client_info": {
+          "package_name": "com.recharge.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957972077114-sfael49ded84p0evc20ko1jvib7j0q3p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA51I0OMTRqbQU3qR5T41yRPaSKApptN74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957972077114-sfael49ded84p0evc20ko1jvib7j0q3p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
